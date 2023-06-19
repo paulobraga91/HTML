@@ -30,15 +30,15 @@
                 
                         <label id="nomeEvento">Nome evento: <span>(mínimo 8 caracteres)</span>
                             </label>
-                        <input type="text" name="nomeEvento">
+                        <input type="text" name="nomeEvento" minlength="8" required>
     
                         <label id="responsavel">Nome Responsável:<span>(mínimo 8 caracteres)</span>
                         </label>
-                        <input type="text" name="responsavel">
+                        <input type="text" name="responsavel" minlength="8"required>
         
                         <label id="numeroContato">Telefone Responsável:<span>(Digite o telefone com DDD)</span>
                         </label>
-                        <input type="number"  name="numeroContato" placeholder="(00)00000-0000 ">
+                        <input type="number"  name="numeroContato" placeholder="(00)00000-0000 "required>
                         
                         <label id="descricaoProva">Descrição Prova:<span>(mínimo 8 caracteres)</span>
                         </label>
@@ -46,10 +46,10 @@
                         </label>
                         
                         <label id="date">Prova:<span>(Selecione a data)</span></label>
-                        <input type="date" name="data" id="data">
+                        <input type="date" name="data" id="data" required>
                         
                         <label id="categoria">Modalidade:</label>
-                        <select id="categoria" >
+                        <select id="categoria" required >
                             <option value="MTB">MTB</option>
                             <option value="Speed">Speed</option>
                         </select>
@@ -57,7 +57,7 @@
                         <label id="categoria">Selecione a categoria:</label>
                             
                         
-                            <div class="cat"> <input type="radio" name="cat" id="cat1"><label for="cat1">ELITE, SUB30, A1, A2, B1, B2, C, TURISMO</label></div>
+                            <div class="cat"> <input type="radio" name="cat" id="cat1" required><label for="cat1">ELITE, SUB30, A1, A2, B1, B2, C, TURISMO</label></div>
                             <div class="cat"> <input type="radio" name="cat" id="cat2"><label for="cat2">Geral ,SUB30, A1, A2, B1, B2, C, TURISMO</label></div>
                             <div class="cat"> <input type="radio" name="cat" id="cat3"><label for="cat3">Geral, A, B, C, TURISMO</label></div>
                         
@@ -77,6 +77,8 @@
                 <footer>
                         <div class="buttonSubmit">
                         <input type="submit" value="SALVAR" form="form"></div>
+
+                     
                     
                 </footer>
         

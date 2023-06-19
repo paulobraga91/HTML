@@ -237,3 +237,7 @@ footer{
     padding: 40px 64px 40px 64px;
     border-top: solid 1px #E6E6F0;
 }
+
+input:invalid{
+    border: solid;
+}
